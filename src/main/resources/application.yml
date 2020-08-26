@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: subscription-service
+  profiles:
+    active: local
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+
+server:
+  port: 8081
+
+logging:
+  file: ./log/subscription.log
